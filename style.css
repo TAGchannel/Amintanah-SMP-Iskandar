@@ -1,0 +1,30 @@
+/* Pastikan gambar responsif */
+.image-container {
+    width: 100vw; /* Gunakan lebar penuh */
+    height: 100vh; /* Gunakan tinggi penuh layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hindari scroll */
+}
+
+.image-container img {
+    max-width: 100%; /* Jangan melebihi layar */
+    max-height: 100%; /* Jangan melebihi layar */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Pastikan gambar tidak terdistorsi */
+}
+
+/* Background body */
+body {
+    min-height: 100vh; /* Pastikan body setinggi layar */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('bg-img.jpg') no-repeat center center;
+    background-size: cover; /* Pastikan background menyesuaikan */
+    user-select: none;
+}
